@@ -1,0 +1,625 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Georgia, serif;
+}
+
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+background:#050505;
+
+}
+
+
+
+header h1{
+
+color:#d4af37;
+
+}
+
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+
+}
+
+
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
+
+
+
+.hero {
+
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.80)
+    ),
+    url("https://images.unsplash.com/photo-1520523839897-bd0b52f945a0");
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.hero::before {
+
+    content: "♪ ♫ ♩ ♬";
+    position: absolute;
+
+    font-size: 120px;
+    color: rgba(212,175,55,0.15);
+
+    top: 20%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+
+.hero-content {
+
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.hero-content{
+
+max-width:800px;
+
+}
+
+
+
+.hero h2{
+
+font-size:70px;
+color:#d4af37;
+margin-bottom:20px;
+
+}
+
+
+
+.hero h3{
+
+font-size:35px;
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+line-height:1.7;
+
+}
+
+
+
+.hero a{
+
+display:inline-block;
+margin-top:35px;
+padding:16px 40px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-size:18px;
+
+}
+
+
+
+.egitimler,
+.neden{
+
+padding:70px 8%;
+text-align:center;
+
+}
+
+
+
+.egitimler h2,
+.neden h2{
+
+color:#d4af37;
+font-size:40px;
+margin-bottom:40px;
+
+}
+
+
+
+.kartlar{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+
+.kart{
+
+background:#171717;
+padding:35px;
+width:350px;
+border-radius:20px;
+
+}
+
+
+
+.kart:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.kart h3{
+
+color:#d4af37;
+font-size:28px;
+margin-bottom:15px;
+
+}
+
+
+
+footer{
+
+text-align:center;
+padding:25px;
+background:#000;
+
+}
+
+
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+}
+
+
+.hero h2{
+
+font-size:45px;
+
+}
+
+
+.kartlar{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+}.hakkimda {
+
+    padding:70px 10%;
+    text-align:center;
+    background:#111;
+
+}
+
+
+.hakkimda h2 {
+
+    color:#d4af37;
+    font-size:40px;
+    margin-bottom:25px;
+
+}
+
+
+.hakkimda p {
+
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+
+}.basvuru {
+
+    min-height:80vh;
+    padding:80px 10%;
+    text-align:center;
+
+}
+
+
+.basvuru h2 {
+
+    color:#d4af37;
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+
+.basvuru p {
+
+    font-size:20px;
+    margin-bottom:40px;
+
+}
+
+
+
+.basvuru form {
+
+    max-width:700px;
+    margin:auto;
+    background:#171717;
+    padding:40px;
+    border-radius:20px;
+
+}
+
+
+
+.basvuru input,
+.basvuru select,
+.basvuru textarea {
+
+
+    width:100%;
+    padding:18px;
+    margin:12px 0;
+
+    background:#0b0b0b;
+    color:white;
+
+    border:1px solid #d4af37;
+    border-radius:10px;
+
+    font-size:17px;
+
+}
+
+
+
+.basvuru textarea {
+
+    height:150px;
+    resize:none;
+
+}
+
+
+
+.basvuru button {
+
+    width:100%;
+    padding:18px;
+
+    font-size:20px;
+
+}/* BAŞVURU SAYFASI TASARIMI */
+
+.basvuru {
+
+    min-height:90vh;
+    padding:90px 10%;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #1b1035,
+        #0b0b0b,
+        #3b1d0b
+    );
+
+}
+
+
+.basvuru h2 {
+
+    color:#ffd700;
+    font-size:50px;
+    margin-bottom:20px;
+
+}
+
+
+.basvuru p {
+
+    font-size:22px;
+    color:#eee;
+    margin-bottom:40px;
+
+}
+
+
+
+.basvuru form {
+
+    max-width:750px;
+    margin:auto;
+
+    background:
+    linear-gradient(
+        145deg,
+        #242424,
+        #101010
+    );
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 0 35px rgba(255,215,0,0.25);
+
+}
+
+
+
+.basvuru input,
+.basvuru select,
+.basvuru textarea {
+
+    width:100%;
+
+    padding:20px;
+
+    margin:15px 0;
+
+    background:#181818;
+
+    color:white;
+
+    border:2px solid #d4af37;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+}
+
+
+
+.basvuru textarea {
+
+    height:170px;
+
+    resize:none;
+
+}
+
+
+
+.basvuru button {
+
+    width:100%;
+
+    padding:20px;
+
+    margin-top:15px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    background:
+    linear-gradient(
+        90deg,
+        #d4af37,
+        #ffea70
+    );
+
+    border:none;
+
+    border-radius:30px;
+
+    color:#111;
+
+    cursor:pointer;
+
+}
+
+
+
+.basvuru button:hover {
+
+    transform:scale(1.04);
+
+}.basvuru {
+
+min-height:90vh;
+
+padding:80px 10%;
+
+text-align:center;
+
+background:
+linear-gradient(
+135deg,
+#24104f,
+#080808,
+#4a2608
+);
+
+}
+
+
+
+.basvuru h2 {
+
+font-size:50px;
+
+color:#ffd700;
+
+margin-bottom:20px;
+
+}
+
+
+
+.basvuru p {
+
+font-size:20px;
+
+color:white;
+
+margin-bottom:40px;
+
+}
+
+
+
+.basvuru form {
+
+max-width:750px;
+
+margin:auto;
+
+padding:50px;
+
+background:#171717;
+
+border-radius:30px;
+
+box-shadow:
+0 0 40px rgba(255,215,0,0.3);
+
+}
+
+
+
+.basvuru input,
+.basvuru select,
+.basvuru textarea {
+
+
+width:100%;
+
+padding:20px;
+
+margin:12px 0;
+
+background:#0d0d0d;
+
+color:white;
+
+border:2px solid #d4af37;
+
+border-radius:15px;
+
+font-size:17px;
+
+}
+
+
+
+.basvuru textarea {
+
+height:160px;
+
+resize:none;
+
+}
+
+
+
+.basvuru button {
+
+width:100%;
+
+padding:20px;
+
+margin-top:15px;
+
+background:#d4af37;
+
+color:black;
+
+border:none;
+
+border-radius:30px;
+
+font-size:22px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.basvuru button:hover {
+
+transform:scale(1.05);
+
+}
+
+
+
+@media(max-width:700px){
+
+.basvuru h2{
+
+font-size:35px;
+
+}
+
+
+.basvuru form{
+
+padding:25px;
+
+}
+
+}
